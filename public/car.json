@@ -1,0 +1,98 @@
+[
+    {
+      "id": 1,
+      "carBrand": "Porsche",
+      "carName": "Audi A4",
+      "model": "2023",
+      "price": 40000,
+      "category": "populer",
+      "image": "https://i.ibb.co.com/0VHC153/brand3.png",
+      "description": "The Audi A4 combines luxury with performance, offering a refined driving experience with advanced tech and a sleek design for modern drivers."
+    },
+    {
+      "id": 2,
+      "carBrand": "Tesla",
+      "carName": "Tesla Model 3",
+      "model": "2023",
+      "price": 35000,
+      "category": "populer",
+      "image": "https://i.ibb.co.com/jZ4xhgv/featured2.png",
+      "description": "Tesla Model 3 delivers electric innovation, high performance, and a sleek design, redefining the future of eco-friendly driving."
+    },
+    {
+      "id": 3,
+      "carBrand": "Porsche",
+      "carName": "Porsche 911",
+      "model": "2023",
+      "price": 100000,
+      "category": "populer",
+      "image": "https://i.ibb.co.com/fxz0rKP/brand1.png",
+      "description": "Porsche 911 is a high-performance sports car that merges iconic style with unmatched precision, perfect for thrill-seekers and luxury lovers."
+    },
+    {
+      "id": 4,
+      "carBrand": "Tesla",
+      "carName": "BMW 3 Series",
+      "model": "2023",
+      "price": 45000,
+      "category": "populer",
+      "image": "https://i.ibb.co.com/pWMY20h/Porsche-Taycan-1.png",
+      "description": "The BMW 3 Series offers a seamless blend of performance, luxury, and cutting-edge technology in a sleek and modern package."
+    },
+    {
+      "id": 5,
+      "carBrand": "Mercedes",
+      "carName": "Mercedes C-Class",
+      "model": "2023",
+      "price": 47000,
+      "category": "populer",
+      "image": "https://i.ibb.co.com/jZ4xhgv/featured2.png",
+      "description": "The Mercedes C-Class delivers exceptional comfort, performance, and elegance, making it an ideal choice for luxury enthusiasts."
+    },
+    {
+      "id": 6,
+      "carBrand": "Porsche",
+      "carName": "Ford Mustang",
+      "model": "2023",
+      "price": 30000,
+      "image": "https://i.ibb.co.com/pWMY20h/Porsche-Taycan-1.png",
+      "description": "Ford Mustang combines power, speed, and style, offering an exhilarating driving experience for performance car lovers."
+    },
+    {
+      "id": 7,
+      "carBrand": "Tesla",
+      "carName": "Chevrolet Camaro",
+      "model": "2023",
+      "price": 27000,
+      "image": "https://i.ibb.co.com/M6D9tzz/featured1.png",
+      "description": "Chevrolet Camaro delivers iconic muscle car performance with modern design and cutting-edge technology for the ultimate thrill ride."
+    },
+    {
+      "id": 8,
+      "carBrand": "Honda",
+      "carName": "Toyota Camry",
+      "model": "2023",
+      "price": 25000,
+      "image": "https://i.ibb.co.com/jZ4xhgv/featured2.png",
+      "description": "The Toyota Camry is a reliable sedan offering comfort, fuel efficiency, and cutting-edge safety features for everyday driving."
+    },
+    {
+      "id": 9,
+      "carBrand": "Honda",
+      "carName": "Honda Accord",
+      "model": "2023",
+      "price": 28000,
+      "image": "https://i.ibb.co.com/M6D9tzz/featured1.png",
+      "description": "Honda Accord blends performance with practicality, featuring spacious interiors, advanced safety, and an efficient driving experience."
+    },
+    {
+      "id": 10,
+      "carBrand": "Honda",
+      "carName": "Nissan Altima",
+      "model": "2023",
+      "price": 24000,
+      "image": "https://i.ibb.co.com/jZ4xhgv/featured2.png",
+      "description": "Nissan Altima offers a sleek design, advanced safety features, and a smooth, fuel-efficient driving experience for city and highway driving."
+    }
+  ]
+  

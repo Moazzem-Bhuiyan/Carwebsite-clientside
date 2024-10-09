@@ -1,0 +1,48 @@
+/* Styling for the slide content */
+.slide-content {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .car-image {
+    width: 500px; /* Adjust the size of the car image */
+    z-index: 2;   /* Ensure the car image is in front */
+    transition: opacity 1s ease;
+  }
+  
+  .car-name {
+    position: absolute;
+    top: 50%;     /* Vertically center the car name */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center it horizontally */
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.1);  /* Make the name faint to appear behind */
+    z-index: 1;    /* Ensure the car name stays behind the car */
+    transition: all 1s ease;   /* Smooth transition */
+  }
+  
+  .car-details {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    z-index: 2;   /* Make sure details are visible */
+  }
+  
+  /* Ensure smooth transitions for the name and image */
+  .mySwiper .swiper-slide-active .car-name {
+    color: rgba(0, 0, 0, 0.5); /* Highlight the active car name */
+    transform: translate(-50%, -40%);
+  }
+  
+  .mySwiper .swiper-slide-prev .car-image, 
+  .mySwiper .swiper-slide-next .car-image {
+    opacity: 0.5; /* Fade out previous/next images */
+  }
+  

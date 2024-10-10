@@ -1,8 +1,43 @@
-import React from "react";
+import React, { useContext } from "react";
+import { FaUser } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../Auth/AuthProvider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Navber = () => {
+  const {user,logout}=useContext(AuthContext)
+  const navigate =useNavigate()
+
+  const handleLogout=()=>{
+
+    logout()
+    .then(()=>{
+      Swal.fire({
+        title: "Are you sure?",
+        text: "You want to logout?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, i want to leave!"
+      }).then((result) => {
+        if (result.isConfirmed) {
+          navigate('/signin')
+        }
+      });
+    })
+
+    .catch (error=>{
+      console.log('mama caught logout hoy nai ' , error)
+    })
+
+
+  }
+
+
+
+
   const navlink = (
     <>
       <NavLink to="/">
@@ -51,10 +86,7 @@ const Navber = () => {
               className="btn btn-ghost btn-circle avatar"
             >
               <div className="w-10 rounded-full">
-                <img
-                  alt="Tailwind CSS Navbar component"
-                  src="https://i.ibb.co.com/xGJ72QD/slrkjgblergb.png"
-                />
+               <FaUser className=" mt-3 ml-2 text-2xl"></FaUser>
               </div>
             </div>
             <ul
@@ -67,12 +99,15 @@ const Navber = () => {
                   <span className="badge">New</span>
                 </a>
               </li>
+              
+             
+              {user ?<li>
+               <a onClick={handleLogout}>Logout</a>
+              </li>:
+
               <li>
-                <a>Settings</a>
-              </li>
-              <li>
-                <a>Logout</a>
-              </li>
+                <Link to ='/signup'>Signup</Link>
+              </li>}
             </ul>
           </div>
         </div>

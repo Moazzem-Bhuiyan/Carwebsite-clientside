@@ -16,7 +16,7 @@ const Populer = () => {
   }, []);
 
   return (
-    <div className="w-[80%] m-auto my-20 space-y-20">
+    <div className="w-[80%] m-auto my-20 space-y-20  ">
       <h1 className="text-center text-4xl font-bold" data-aos="fade-up">
         Choose Your Electric Car Of The Populer{" "}
       </h1>

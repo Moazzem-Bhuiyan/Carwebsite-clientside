@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { GiShoppingBag } from "react-icons/gi";
 
 const Porsche = () => {
   const { car } = useCar();
@@ -37,7 +38,7 @@ const Porsche = () => {
               <p>${item.price}</p>
               <Link to={`/viewDetails/${item.id}`}>
                 <button className="text-2xl">
-                  <FaShopify />
+                <GiShoppingBag />
                 </button>
               </Link>
             </div>

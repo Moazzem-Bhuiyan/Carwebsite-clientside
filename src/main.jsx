@@ -17,6 +17,7 @@ import ContactUs from "./ContactUs/ContactUs.jsx";
 import AuthProvider from "./Auth/AuthProvider/AuthProvider.jsx";
 import SignUp from "./Auth/SignUp/SignUp.jsx";
 import SignIn from "./Auth/SignIn/SignIn.jsx";
+import PrivateAuth from "./Auth/PrivateAuth/PrivateAuth.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/viewDetails/:id",
-        element: <ViewDetails></ViewDetails>,
+        element: <PrivateAuth><ViewDetails></ViewDetails></PrivateAuth>,
         loader: () => fetch("/car.json"),
       },
 

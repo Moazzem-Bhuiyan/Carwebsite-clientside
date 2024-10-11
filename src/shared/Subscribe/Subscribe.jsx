@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 
 const Subscribe = () => {
     useEffect(() => {
-        AOS.init({ duration: 1000 }); // Initialize AOS for animations
+        AOS.init({ duration: 3000 }); // Initialize AOS for animations
     }, []);
 
     const handletoast = () => {
